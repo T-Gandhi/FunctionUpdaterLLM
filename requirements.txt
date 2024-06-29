@@ -1,0 +1,10 @@
+requests
+networkx
+matplotlib
+plotly
+python-dotenv
+tree-sitter
+tree-sitter-python
+langchain
+groq
+langchain-groq
