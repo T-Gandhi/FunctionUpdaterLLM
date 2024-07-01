@@ -13,7 +13,7 @@ Set Up:
     ```
 
 3. **Uploading the `.env` File**:
-    - Upload the provided `.env` file to the project directory.
+    - Upload the `.env` file to the project directory. The file should contain [Github API token](https://github.com/settings/tokens) 'GH_TOKEN' and [Groq API key](https://console.groq.com/keys) 'GROQ_API_KEY'.
 
 4. **Running the Main Script**:
     ```bash
