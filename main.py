@@ -122,7 +122,9 @@ def update_callers_code(file_path, function_name, tree, prev_response, function_
     callers_names = tree.get_callers(function_name)
     callers_codes = tree.get_callers_function_code(function_name)
     # function_def = prev_response
-    function_def = tree.get_function_from_name(function_name)
+    tree1, file_path1 = get_tree_of_function(function_name, function_dict, tree_dict)
+    function_def = tree1.get_function_from_name(function_name)
+    # function_def = tree.get_function_from_name(function_name)
     #prompt llm to edit code of each caller to fit the new function definition and update the arguments
     for i in range(len(callers_codes)):
         caller_code = callers_codes[i]
